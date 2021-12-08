@@ -10,13 +10,13 @@ const NewsScreen = () => {
   const {
     news: { articles },
   } = useContext(NewsContext);
-
+  // console.log(articles.length);
   return (
     <View style={styles.carousel}>
       {articles && (
         <Carousel
           layout={"stack"}
-          data={articles.slice(0, 10)}
+          data={articles}
           sliderHeight={300}
           itemHeight={widowHeight}
           vertical={true}

@@ -8,20 +8,20 @@ const Context = ({ children }) => {
   const [news, setNews] = useState([]);
   const [category, setCategory] = useState("general");
   const [source, setSource] = useState();
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
   const [darkTheme, setDarkTheme] = useState(true);
 
   const fetchNews = async (reset = category) => {
     const { data } = await axios.get(getNewsAPI(reset));
     setNews(data);
-    setIndex(1);
+    setIndex(0);
   };
 
   const fetchNewsfromSource = async () => {
     try {
       const { data } = await axios.get(getSourceAPI(source));
       setNews(data);
-      setIndex(1);
+      setIndex(0);
     } catch (error) {
       console.log(error);
     }

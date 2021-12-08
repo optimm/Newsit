@@ -3,33 +3,33 @@
 export const categories = [
   {
     code: "",
-    pic: "./news.png",
+    pic: "https://raw.githubusercontent.com/optimm/Newsit/master/API/news.png",
     name: "general",
   },
   {
     code: "",
-    pic: "./buis.png",
+    pic: "https://raw.githubusercontent.com/optimm/Newsit/master/API/buis.png",
     name: "business",
   },
   {
     code: "",
-    pic: "./ent.png",
+    pic: "https://raw.githubusercontent.com/optimm/Newsit/master/API/ent.png",
     name: "entertainment",
   },
   {
-    pic: "./health.png",
+    pic: "https://raw.githubusercontent.com/optimm/Newsit/master/API/health.png",
     name: "health",
   },
   {
-    pic: "./science.png",
+    pic: "https://raw.githubusercontent.com/optimm/Newsit/master/API/science.png",
     name: "science",
   },
   {
-    pic: "./sports.png",
+    pic: "https://raw.githubusercontent.com/optimm/Newsit/master/API/sports.png",
     name: "sports",
   },
   {
-    pic: "./tech.png",
+    pic: "https://raw.githubusercontent.com/optimm/Newsit/master/API/tech.png",
     name: "technology",
   },
 ];
