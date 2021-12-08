@@ -20,7 +20,7 @@ const TopNavigation = (index, setIndex) => {
     >
       {ind === 0 ? (
         <TouchableOpacity style={styles.left}>
-          <Text style={{ color: "white", fontSize: 18 }}>Newsit</Text>
+          <Text style={{ color: "white", fontSize: 18 }}>NewsIt</Text>
         </TouchableOpacity>
       ) : (
         <TouchableOpacity

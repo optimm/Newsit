@@ -8,7 +8,7 @@ const Context = ({ children }) => {
   const [news, setNews] = useState([]);
   const [category, setCategory] = useState("general");
   const [source, setSource] = useState();
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
   const [darkTheme, setDarkTheme] = useState(true);
 
   const fetchNews = async (reset = category) => {
