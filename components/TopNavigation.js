@@ -3,10 +3,12 @@ import {
   MaterialCommunityIcons,
   SimpleLineIcons,
 } from "@expo/vector-icons";
-import React from "react";
+import React, { useContext } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { NewsContext } from "../API/Context";
 
 const TopNavigation = (index, setIndex) => {
+  const { fetchNews } = useContext(NewsContext);
   const ind = index.index;
   const set = index.setIndex;
   return (
@@ -18,13 +20,7 @@ const TopNavigation = (index, setIndex) => {
     >
       {ind === 0 ? (
         <TouchableOpacity style={styles.left}>
-          <Text style={{ ...styles.text, color: "lightgrey" }}>
-            <MaterialCommunityIcons
-              name="theme-light-dark"
-              size={24}
-              color="rgb(209, 209, 209)"
-            />
-          </Text>
+          <Text style={{ color: "white", fontSize: 18 }}>Newsit</Text>
         </TouchableOpacity>
       ) : (
         <TouchableOpacity
@@ -39,11 +35,14 @@ const TopNavigation = (index, setIndex) => {
           <Text style={{ ...styles.text, color: "lightgrey" }}>Discover</Text>
         </TouchableOpacity>
       )}
-      <Text style={{ ...styles.center, color: "white" }}>
+      <Text style={{ ...styles.center, color: "rgb(209, 209, 209)" }}>
         {ind ? "All News" : "Discover"}
       </Text>
       {ind ? (
-        <TouchableOpacity style={styles.right}>
+        <TouchableOpacity
+          style={styles.right}
+          onPress={() => fetchNews("general")}
+        >
           <Text style={styles.text}>
             <AntDesign name="reload1" size={24} color="rgb(209, 209, 209)" />
           </Text>
@@ -53,7 +52,9 @@ const TopNavigation = (index, setIndex) => {
           style={styles.left}
           onPress={() => set(ind === 0 ? 1 : 0)}
         >
-          <Text style={{ ...styles.text, color: "white" }}>All News</Text>
+          <Text style={{ ...styles.text, color: "rgb(209, 209, 209)" }}>
+            All News
+          </Text>
           <SimpleLineIcons
             name="arrow-right"
             size={15}
@@ -76,7 +77,7 @@ const styles = StyleSheet.create({
   center: {
     paddingBottom: 5,
     fontSize: 20,
-    fontWeight: "700",
+    // fontWeight: "700",
   },
   left: {
     flexDirection: "row",

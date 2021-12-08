@@ -10,7 +10,7 @@ const NewsScreen = () => {
   const {
     news: { articles },
   } = useContext(NewsContext);
-  console.log(articles);
+
   return (
     <View style={styles.carousel}>
       {articles && (

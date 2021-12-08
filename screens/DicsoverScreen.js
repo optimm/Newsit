@@ -11,17 +11,17 @@ import {
 import Carousel from "react-native-snap-carousel";
 import { categories, sources } from "../API/api";
 import { NewsContext } from "../API/Context";
-// import Search from "../components/Search";
+import Search from "../components/Search";
 
 const DiscoverScreen = () => {
   const windowWidth = Dimensions.get("window").width;
   const SLIDE_WIDTH = Math.round(windowWidth / 3.5);
 
   const { setCategory, setSource, darkTheme } = useContext(NewsContext);
-
+  console.log("hello");
   return (
     <View style={styles.discover}>
-      {/* <Search /> */}
+      <Search />
       <Text style={{ ...styles.subtitle, color: "white" }}>Categories</Text>
       <Carousel
         layout={"default"}

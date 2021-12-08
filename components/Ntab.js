@@ -10,7 +10,7 @@ const Ntab = () => {
   const layout = useWindowDimensions();
 
   const { index, setIndex } = useContext(NewsContext);
-
+  console.log(index);
   const [routes] = React.useState([
     { key: "first", title: "Discover" },
     { key: "second", title: "News" },
