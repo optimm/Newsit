@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { View, Text, useWindowDimensions } from "react-native";
 import { SceneMap, TabView } from "react-native-tab-view";
+import { NewsContext } from "../API/Context";
 import DicsoverScreen from "../screens/DicsoverScreen";
 import NewsScreen from "../screens/NewsScreen";
 import TopNavigation from "./TopNavigation";
 
 const Ntab = () => {
-  console.log("hello");
   const layout = useWindowDimensions();
-  const [index, setIndex] = useState(1);
-  console.log(index);
+
+  const { index, setIndex } = useContext(NewsContext);
+
   const [routes] = React.useState([
     { key: "first", title: "Discover" },
     { key: "second", title: "News" },

@@ -1,11 +1,18 @@
-import { setStatusBarBackgroundColor } from "expo-status-bar";
-import React from "react";
-import { StyleSheet, Text, View, StatusBar } from "react-native";
+import React, { useContext } from "react";
+import { StatusBar, StyleSheet, View } from "react-native";
+import Context, { NewsContext } from "./API/Context";
 import Ntab from "./components/Ntab";
 
-export default function App() {
+function App() {
+  // const { darkTheme } = useContext(NewsContext);
+
   return (
-    <View style={{ ...styles.container, backgroundColor: "#282C35" }}>
+    <View
+      style={{
+        ...styles.container,
+        backgroundColor: "#282C35",
+      }}
+    >
       <Ntab />
     </View>
   );
@@ -17,3 +24,11 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight,
   },
 });
+
+export default () => {
+  return (
+    <Context>
+      <App />
+    </Context>
+  );
+};

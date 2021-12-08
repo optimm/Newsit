@@ -13,7 +13,7 @@ const TopNavigation = (index, setIndex) => {
     <View
       style={{
         ...styles.container,
-        backgroundColor: "#282C35",
+        backgroundColor: "rgb(56, 56, 56)",
       }}
     >
       {ind === 0 ? (
@@ -22,7 +22,7 @@ const TopNavigation = (index, setIndex) => {
             <MaterialCommunityIcons
               name="theme-light-dark"
               size={24}
-              color="#007FFF"
+              color="rgb(209, 209, 209)"
             />
           </Text>
         </TouchableOpacity>
@@ -31,7 +31,11 @@ const TopNavigation = (index, setIndex) => {
           style={styles.left}
           onPress={() => set(ind === 0 ? 1 : 0)}
         >
-          <SimpleLineIcons name="arrow-left" size={15} color="#007FFF" />
+          <SimpleLineIcons
+            name="arrow-left"
+            size={15}
+            color="rgb(209, 209, 209)"
+          />
           <Text style={{ ...styles.text, color: "lightgrey" }}>Discover</Text>
         </TouchableOpacity>
       )}
@@ -41,7 +45,7 @@ const TopNavigation = (index, setIndex) => {
       {ind ? (
         <TouchableOpacity style={styles.right}>
           <Text style={styles.text}>
-            <AntDesign name="reload1" size={24} color="#007FFF" />
+            <AntDesign name="reload1" size={24} color="rgb(209, 209, 209)" />
           </Text>
         </TouchableOpacity>
       ) : (
@@ -50,7 +54,11 @@ const TopNavigation = (index, setIndex) => {
           onPress={() => set(ind === 0 ? 1 : 0)}
         >
           <Text style={{ ...styles.text, color: "white" }}>All News</Text>
-          <SimpleLineIcons name="arrow-right" size={15} color="#007FFF" />
+          <SimpleLineIcons
+            name="arrow-right"
+            size={15}
+            color="rgb(209, 209, 209)"
+          />
         </TouchableOpacity>
       )}
     </View>
@@ -67,9 +75,9 @@ const styles = StyleSheet.create({
   },
   center: {
     paddingBottom: 6,
-    borderBottomColor: "#007FFF",
+    borderBottomColor: "rgb(209, 209, 209)",
     borderBottomWidth: 5,
-    borderRadius: 10,
+    borderRadius: 13,
     fontSize: 16,
     fontWeight: "700",
   },
