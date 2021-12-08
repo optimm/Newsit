@@ -3,33 +3,33 @@
 export const categories = [
   {
     code: "",
-    pic: "https://cdn-icons.flaticon.com/png/128/741/premium/741867.png?token=exp=1638973163~hmac=905ea092adef0df40943181a21b45a4d",
+    pic: "./news.png",
     name: "general",
   },
   {
     code: "",
-    pic: "https://cdn-icons.flaticon.com/png/128/3281/premium/3281412.png?token=exp=1638973219~hmac=080d1ca98973c48c6e166c45809cbcc1",
+    pic: "./buis.png",
     name: "business",
   },
   {
     code: "",
-    pic: "https://cdn-icons-png.flaticon.com/128/1038/1038100.png",
+    pic: "./ent.png",
     name: "entertainment",
   },
   {
-    pic: "https://cdn-icons.flaticon.com/png/128/2382/premium/2382461.png?token=exp=1638973268~hmac=ede0784f70ba11a2f63c99b7646e0af2",
+    pic: "./health.png",
     name: "health",
   },
   {
-    pic: "https://cdn-icons.flaticon.com/png/128/3920/premium/3920108.png?token=exp=1638973289~hmac=4dc65d5919fc54a1d4067414d8d3d59c",
+    pic: "./science.png",
     name: "science",
   },
   {
-    pic: "https://cdn-icons.flaticon.com/png/128/3311/premium/3311579.png?token=exp=1638973309~hmac=9fc755008bd3180d131b559b39bc7767",
+    pic: "./sports.png",
     name: "sports",
   },
   {
-    pic: "https://cdn-icons-png.flaticon.com/128/993/993515.png",
+    pic: "./tech.png",
     name: "technology",
   },
 ];

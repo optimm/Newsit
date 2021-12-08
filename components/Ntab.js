@@ -12,12 +12,12 @@ const Ntab = () => {
   const { index, setIndex } = useContext(NewsContext);
 
   const [routes] = React.useState([
-    { key: "first", title: "Discover" },
-    { key: "second", title: "News" },
+    { key: "first", title: "News" },
+    { key: "second", title: "Discover" },
   ]);
   const renderScene = SceneMap({
-    first: DicsoverScreen,
-    second: NewsScreen,
+    first: NewsScreen,
+    second: DicsoverScreen,
   });
 
   return (

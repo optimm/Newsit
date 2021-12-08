@@ -18,7 +18,7 @@ const TopNavigation = (index, setIndex) => {
         backgroundColor: "rgb(56, 56, 56)",
       }}
     >
-      {ind === 0 ? (
+      {ind === 1 ? (
         <TouchableOpacity style={styles.left}>
           <Text style={{ color: "white", fontSize: 18 }}>NewsIt</Text>
         </TouchableOpacity>
@@ -36,9 +36,9 @@ const TopNavigation = (index, setIndex) => {
         </TouchableOpacity>
       )}
       <Text style={{ ...styles.center, color: "rgb(209, 209, 209)" }}>
-        {ind ? "All News" : "Discover"}
+        {ind === 0 ? "All News" : "Discover"}
       </Text>
-      {ind ? (
+      {ind === 0 ? (
         <TouchableOpacity
           style={styles.right}
           onPress={() => fetchNews("general")}
