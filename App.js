@@ -10,7 +10,7 @@ function App() {
     <View
       style={{
         ...styles.container,
-        backgroundColor: "#282C35",
+        backgroundColor: "black",
       }}
     >
       <Ntab />

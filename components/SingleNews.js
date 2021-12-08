@@ -37,10 +37,7 @@ const SingleNews = ({ item, index }) => {
       </View>
       <View style={styles.footer}>
         <TouchableOpacity onPress={() => Linking.openURL(item.url)}>
-          <Text style={{ fontSize: 14, color: "white" }}>
-            '{item?.content?.slice(0, 45)}...'
-          </Text>
-          <Text style={{ fontSize: 16, color: "white" }}>Read More</Text>
+          <Text style={{ fontSize: 16, color: "white" }}>Full article</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -61,7 +58,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   footer: {
-    height: 65,
+    height: 45,
     width: windowWidth,
     position: "absolute",
     bottom: 0,

@@ -68,17 +68,14 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 10,
+    padding: 13,
     alignItems: "center",
     borderBottomColor: "black",
     borderBottomWidth: 0.5,
   },
   center: {
-    paddingBottom: 6,
-    borderBottomColor: "rgb(209, 209, 209)",
-    borderBottomWidth: 5,
-    borderRadius: 13,
-    fontSize: 16,
+    paddingBottom: 5,
+    fontSize: 20,
     fontWeight: "700",
   },
   left: {
