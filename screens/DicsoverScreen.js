@@ -17,8 +17,7 @@ const DiscoverScreen = () => {
   const windowWidth = Dimensions.get("window").width;
   const SLIDE_WIDTH = Math.round(windowWidth / 3.5);
 
-  const { setCategory, setSource, darkTheme } = useContext(NewsContext);
-  console.log("hello");
+  const { setCategory, setSource, darkTheme } = useContext(NewsContext);;
   return (
     <View style={styles.discover}>
       <Search />
